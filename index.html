@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karima | Ramadan Kareem</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="background-container">
+            <!-- Background image handled in CSS -->
+            <div class="overlay"></div>
+            <div class="stars"></div>
+        </div>
+
+        <main class="hero">
+            <header class="top-bar">
+                <div class="logo">Karima ❤️</div>
+                <nav>
+                    <a href="#">تهنئة خاصة</a>
+                </nav>
+            </header>
+
+            <div class="content">
+                <h1 class="fade-in-up">رمضان أحلى مع <span class="highlight-name">كريمة</span></h1>
+                <h2 class="fade-in-up delay-1">ينعاد عليكي بالخير والسعادة وتحقيق الأماني</h2>
+                <p class="fade-in-up delay-2">يا أجمل من زادنا نوراً في هذا الشهر، رمضان كريم عليكي</p>
+
+                <div class="countdown fade-in-up delay-3" id="countdown">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <label>أيام</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <label>ساعات</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <label>دقائق</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <label>ثواني</label>
+                    </div>
+                </div>
+
+                <button class="cta-button fade-in-up delay-4">هدية لكِ 🎁</button>
+            </div>
+
+            <div class="lantern-glow"></div>
+            <main class="hero">
+                <!-- ... existing content ... -->
+                <!-- Moved content inside hero to stay same, just appending modal outside hero or inside app -->
+            </main>
+
+            <!-- Gift Modal -->
+            <div id="gift-modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="lantern-container">
+                        <div class="lantern">
+                            <div class="lantern-inner">
+                                <div class="lantern-chain"></div>
+                                <div class="lantern-head"></div>
+                                <div class="lantern-body">
+                                    <div class="lantern-glass">
+                                        <div class="lantern-light"></div>
+                                    </div>
+                                </div>
+                                <div class="lantern-base"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="modal-title">رمضان أحلى بوجودك كدة</h3>
+                    <p class="modal-text">يا <span class="highlight-modal-name">كريمة</span> ❤️</p>
+                    <p class="modal-subtext">كل لحظة وأنتِ طيبة وبخير وسعادة</p>
+                </div>
+            </div>
+            <script type="module" src="/main.js"></script>
+</body>
+
+</html>
